@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light;
+  --ink: #182422;
+  --secondary: #52605b;
+  --paper: #ffffff;
+  --line: #dbe3df;
+  --brand: #08786f;
+  --notice: #8a3a38;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: 16px; line-height: 1.85; letter-spacing: 0; }
+a { color: var(--brand); text-underline-offset: 4px; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--brand); outline-offset: 5px; }
+.wrap { width: min(100% - 40px, 800px); margin-inline: auto; }
+.site-header { border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-block: 22px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 600; text-decoration: none; }
+.brand img { width: 40px; height: 40px; border-radius: 8px; }
+nav { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; }
+nav a[aria-current="page"] { color: var(--ink); text-decoration-thickness: 2px; }
+main { padding-block: 44px 64px; }
+h1 { font-size: 30px; line-height: 1.4; margin: 0 0 14px; overflow-wrap: anywhere; }
+h2 { font-size: 21px; line-height: 1.5; margin: 0 0 16px; }
+h3 { font-size: 17px; line-height: 1.6; margin: 28px 0 8px; }
+p { margin: 0 0 16px; }
+section { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
+ul, ol { margin: 0 0 18px; padding-left: 24px; }
+li + li { margin-top: 8px; }
+.muted { color: var(--secondary); }
+.draft { color: var(--notice); font-size: 14px; margin-bottom: 24px; }
+.contact-email { font-size: 18px; }
+details { padding-block: 18px; border-bottom: 1px solid var(--line); }
+summary { font-weight: 600; cursor: pointer; }
+details p { margin: 16px 0 0; }
+footer { border-top: 1px solid var(--line); padding-block: 24px; color: var(--secondary); font-size: 14px; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+@media (max-width: 420px) {
+  .wrap { width: calc(100% - 32px); }
+  .header-inner { align-items: flex-start; }
+  nav { width: 100%; gap: 16px; }
+  h1 { font-size: 26px; }
+  main { padding-top: 32px; }
+}

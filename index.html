@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Taskchuterの問い合わせ窓口と、通知・繰り返しタスク・バックアップに関するサポート情報。">
+  <title>Taskchuter サポート</title>
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="40" height="40">Taskchuter</a>
+      <nav aria-label="ページ"><a href="index.html" aria-current="page">サポート</a><a href="privacy/index.html">プライバシーポリシー</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1>Taskchuter サポート</h1>
+    <p class="muted">タスクと作業時間を、ひとつの流れに。</p>
+    <section aria-labelledby="contact">
+      <h2 id="contact">お問い合わせ</h2>
+      <p>不具合の報告、ご意見、ご質問はメールでお送りください。</p>
+      <p class="contact-email"><a href="mailto:red.mask6575@fastmail.com?subject=Taskchuter%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">red.mask6575@fastmail.com</a></p>
+      <p>運営者：Fumi</p>
+      <p>不具合の場合は、アプリのバージョン、iPhoneの機種、iOSのバージョン、発生した操作を分かる範囲でお知らせください。画面の画像を添付する際は、個人情報やタスクの内容を隠してください。</p>
+      <p>バックアップファイルや機密情報は、最初のお問い合わせには添付しないでください。パスワードやApple Accountの認証情報をお尋ねすることはありません。</p>
+    </section>
+    <section aria-labelledby="faq">
+      <h2 id="faq">よくある質問</h2>
+      <details open><summary>タスクはどこに保存されますか？</summary><p>タスク、メモ、プロジェクト、繰り返し設定、作業時間の記録は端末内に保存されます。Taskchuterによるクラウド同期や、開発者のサーバーへの自動送信はありません。ログインも不要です。iOSやiCloudによる端末バックアップは、Apple側の設定に従います。</p></details>
+      <details><summary>タスクを編集・削除するには？</summary><p>タスクをタップすると編集画面が開きます。右上の削除アイコンから削除できます。一覧でタスクを右から左へスワイプして削除することもできます。スワイプ削除直後に「元に戻す」が表示されている間は取り消せます。</p></details>
+      <details><summary>通知はいつ届きますか？</summary><p>タスクの開始時間に未来の時刻を入力すると、その時刻の通知を予約します。見積時間を設定したタスクを開始すると、実行時間が見積時間に達するタイミングで通知します。見積時間を入力しただけでは、経過時間の通知は始まりません。</p></details>
+      <details><summary>通知が届かない場合は？</summary><p>iPhoneの「設定」でTaskchuterの通知許可と表示方法を確認してください。集中モードや通知の要約など、iOSの設定も影響します。繰り返しタスクは対象の日付を開いたときに作られるため、まだ開いていない日付の通知は予約されません。通知はiOSの上限に合わせて早い順から最大64件が予約され、アプリを使う際に更新されます。</p></details>
+      <details><summary>繰り返しタスクには何を設定できますか？</summary><p>毎日、週の曜日指定（複数選択可）、月の日付指定に対応しています。繰り返し一覧の順番は、新しく作られる日ごとのタスクの並びに反映されます。すでに作られたタスクが、テンプレートの変更ですべて更新されるわけではありません。</p></details>
+      <details><summary>バックアップを作成するには？</summary><p>画面下部の「バックアップ」から「バックアップを作成」を選び、共有メニューで保存先を選んでください。ファイルにはタスクやメモが含まれ、暗号化されません。第三者がアクセスできない安全な場所に保管してください。</p></details>
+      <details><summary>バックアップから復元するには？</summary><p>「バックアップ」から「バックアップから復元」を選び、JSONファイルを指定してください。対応するバックアップは20MB以下です。復元すると現在の全データが置き換わり、復元前のコピーは自動作成されません。残したいデータは、先に別のバックアップとして保存してください。</p></details>
+      <details><summary>機種変更やアプリ削除の前に必要なことは？</summary><p>アプリ内のバックアップ機能でファイルを作成し、アプリの外の安全な場所へ保存してください。新しい端末にTaskchuterをインストールし、そのファイルから復元できます。Taskchuterのクラウド同期で自動的に移行することはありません。バックアップがなければ、開発者がタスクを復元することはできません。</p></details>
+      <details><summary>どの端末で使えますか？</summary><p>初回リリースはiOS 17.0以降のiPhone向けです。</p></details>
+    </section>
+    <section aria-labelledby="privacy-link"><h2 id="privacy-link">データの取り扱い</h2><p><a href="privacy/index.html">プライバシーポリシー</a>で、端末内の保存データ、通知、バックアップ、お問い合わせについて説明しています。</p></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© 2026 Fumi</span><span>Taskchuter</span></div></footer>
+</body>
+</html>
